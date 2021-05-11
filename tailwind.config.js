@@ -11,6 +11,13 @@ module.exports = {
           1: "#1aafd0",
           2: "#3be8b0",
         },
+        asana: {
+          green: "#3be8b0",
+          blue: "#1aafd0",
+          purple: "#6a67ce",
+          yellow: "#ffb900",
+          red: "#fc636b",
+        },
       },
 
       flex: {
@@ -19,7 +26,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ["disabled"],
+      cursor: ["disabled"],
+    },
   },
   plugins: [],
 }
