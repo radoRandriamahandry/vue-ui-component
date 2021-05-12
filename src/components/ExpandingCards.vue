@@ -1,18 +1,16 @@
 <template>
-  <div class="py-7">
-    <h2 class="pb-4 text-lg font-semibold">Expanding Cards</h2>
-    <div class="flex gap-2">
-      <div
-        v-for="card in cards"
-        :key="card.num"
-        class="flex-1 text-white transition-all duration-300 ease-in rounded-md  hover:opacity-70"
-        :class="[card.isActive ? 'flex-5' : `bg-blue-${card.num + 1}00`]"
-        :style="{ 'background-color': card.color }"
-        @click="changeActiveCard(card.num)"
-      >
-        <div class="grid font-semibold cursor-pointer place-items-center h-96">
-          Card {{ card.num }}
-        </div>
+  <h2 class="pb-4 text-lg font-semibold">Expanding Cards</h2>
+  <div class="flex gap-2">
+    <div
+      v-for="card in cards"
+      :key="card.num"
+      class="flex-1 text-white transition-all duration-300 ease-in rounded-md  hover:opacity-70"
+      :class="[card.isActive ? 'flex-5' : `bg-blue-${card.num + 1}00`]"
+      :style="{ 'background-color': card.color }"
+      @click="changeActiveCard(card.num)"
+    >
+      <div class="grid font-semibold cursor-pointer place-items-center h-96">
+        Card {{ card.num }}
       </div>
     </div>
   </div>

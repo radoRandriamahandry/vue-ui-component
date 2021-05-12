@@ -1,49 +1,50 @@
 <template>
-  <div>
-    <h2 class="pb-4 mt-3 text-lg font-semibold">Progress step</h2>
-    <div
-      class="grid border rounded-md border-asana-green py-7 place-items-center"
-    >
-      <div class="grid w-1/2 place-items-center gap-y-3">
-        <div class="relative flex justify-between w-3/4">
-          <div class="absolute self-center w-full h-1 bg-gray-300"></div>
-          <div
-            class="absolute self-center h-1 transition-all duration-300 ease-out  bg-asana-yellow"
-            :style="{ width: `${progressBar}%` }"
-          ></div>
-          <div
-            v-for="item in items"
-            :key="item.val"
-            class="z-0 transition-colors duration-200 ease-out delay-300 bg-white  circle"
-            :class="[item.isActive ? 'border-asana-yellow' : 'border-gray-300']"
-          >
-            {{ item.val }}
-          </div>
-        </div>
-        <div class="flex justify-between w-1/4">
-          <button
-            class="text-gray-500  btn focus:outline-none focus:ring-1 border-asana-purple disabled:opacity-50 disabled:cursor-not-allowed"
-            :disabled="prevIsDisabled"
-            @click="handleClick('prev')"
-          >
-            Prev
-          </button>
-          <button
-            class="text-gray-500  btn focus:outline-none focus:ring-1 border-asana-blue disabled:opacity-50 disabled:cursor-not-allowed"
-            :disabled="nextIsDisabled"
-            @click="handleClick('next')"
-          >
-            Next
-          </button>
+  <h2 class="pb-4 mt-3 text-lg font-semibold">Progress step</h2>
+  <UIWrapper>
+    <div class="grid w-1/2 place-items-center gap-y-3">
+      <div class="relative flex justify-between w-3/4">
+        <div class="absolute self-center w-full h-1 bg-gray-300"></div>
+        <div
+          class="absolute self-center h-1 transition-all duration-300 ease-out  bg-asana-yellow"
+          :style="{ width: `${progressBar}%` }"
+        ></div>
+        <div
+          v-for="item in items"
+          :key="item.val"
+          class="z-0 transition-colors duration-200 ease-out delay-300 bg-white  circle"
+          :class="[item.isActive ? 'border-asana-yellow' : 'border-gray-300']"
+        >
+          {{ item.val }}
         </div>
       </div>
+      <div class="flex justify-between w-1/4">
+        <button
+          class="text-gray-500  btn focus:outline-none focus:ring-1 border-asana-purple disabled:opacity-50 disabled:cursor-not-allowed"
+          :disabled="prevIsDisabled"
+          @click="handleClick('prev')"
+        >
+          Prev
+        </button>
+        <button
+          class="text-gray-500  btn focus:outline-none focus:ring-1 border-asana-blue disabled:opacity-50 disabled:cursor-not-allowed"
+          :disabled="nextIsDisabled"
+          @click="handleClick('next')"
+        >
+          Next
+        </button>
+      </div>
     </div>
-  </div>
+  </UIWrapper>
 </template>
 
 <script>
+import UIWrapper from "./UI/UIWrapper.vue"
 import { ref } from "vue"
+
 export default {
+  components: {
+    UIWrapper,
+  },
   setup() {
     const items = ref([
       { val: 1, isActive: true },
