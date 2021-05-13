@@ -1,16 +1,18 @@
 <template>
   <div class="container--loopStudio">
     <p>Loop Studio</p>
-    <div class="mt-5 overlap">
-      <div class="overlap--image">
+    <div class="grid grid-cols-9 grid-rows-4 mt-5">
+      <div class="col-start-1 col-end-6 row-start-1 row-end-4">
         <img
           src="/src/assets/LPageLoopStudio/image-interactive.jpg"
           alt=""
           srcset=""
         />
       </div>
-      <div class="px-16 py-20 bg-white overlap--text">
-        <h2 class="text-4xl leading-9 uppercase">
+      <div
+        class="col-start-5 col-end-10 row-start-2 row-end-5 px-16 py-20  bg-gray-50"
+      >
+        <h2 class="text-4xl leading-9 tracking-wider uppercase">
           The leader in interactive VR
         </h2>
         <p class="mt-3">
@@ -38,21 +40,5 @@ export default {}
 
 .container--loopStudio {
   font-family: "Josefin Sans", sans-serif;
-}
-
-.overlap {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-}
-
-.overlap--image {
-  grid-column: 1 / 6;
-  grid-row: 1/4;
-}
-
-.overlap--text {
-  grid-column: 5 / -1;
-  grid-row: 2 / -1;
 }
 </style>
