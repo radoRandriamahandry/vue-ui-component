@@ -1,8 +1,13 @@
 @tailwind base;
 @tailwind components;
-
-body {
-  @apply text-gray-700 bg-gray-50;
-}
-
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply max-w-screen-lg mx-auto text-gray-700 bg-gray-50 pb-7;
+  }
+
+  .title {
+    @apply text-4xl font-semibold text-primary;
+  }
+}
