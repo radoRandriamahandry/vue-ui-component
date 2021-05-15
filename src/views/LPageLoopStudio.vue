@@ -10,7 +10,7 @@
         />
       </template>
       <template #secondContent>
-        <div class="w-full h-full py-20 pl-24 pr-28 bg-gray-50">
+        <div class="w-full h-full py-20 pl-24 bg-gray-50">
           <h2 class="text-4xl leading-9 tracking-wider uppercase">
             The leader in interactive VR
           </h2>
@@ -23,14 +23,70 @@
         </div>
       </template>
     </OverlappingContent>
+    <section class="mt-12">
+      <div class="flex justify-between">
+        <h2 class="text-4xl leading-9 uppercase">Our Creations</h2>
+        <button
+          class="py-1 text-sm uppercase border border-gray-400  px-7 hover:border-gray-600"
+        >
+          See all
+        </button>
+      </div>
+      <div class="grid grid-cols-4 gap-6 mt-10">
+        <div v-for="card in cards" :key="card.title">
+          <BaseCard :card="card" />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 import OverlappingContent from "../components/loop-studios/layouts/OverlappingContent.vue"
 import HeroSection from "../components/loop-studios/layouts/HeroSection.vue"
+import BaseCard from "../components/loop-studios/bases/BaseCard.vue"
+import { ref } from "vue"
+
 export default {
-  components: { OverlappingContent, HeroSection },
+  components: { OverlappingContent, HeroSection, BaseCard },
+  setup() {
+    const cards = ref([
+      {
+        title: "deep earth",
+        image: "/src/assets/LPageLoopStudio/image-deep-earth.jpg",
+      },
+      {
+        title: "night arcade",
+        image: "/src/assets/LPageLoopStudio/image-night-arcade.jpg",
+      },
+      {
+        title: "soccer team vr",
+        image: "/src/assets/LPageLoopStudio/image-soccer-team.jpg",
+      },
+      {
+        title: "the grid",
+        image: "/src/assets/LPageLoopStudio/image-grid.jpg",
+      },
+      {
+        title: "from up above vr",
+        image: "/src/assets/LPageLoopStudio/image-from-above.jpg",
+      },
+      {
+        title: "pocket borealis",
+        image: "/src/assets/LPageLoopStudio/image-pocket-borealis.jpg",
+      },
+      {
+        title: "the curiosity",
+        image: "/src/assets/LPageLoopStudio/image-curiosity.jpg",
+      },
+      {
+        title: "make it fisheye",
+        image: "/src/assets/LPageLoopStudio/image-fisheye.jpg",
+      },
+    ])
+
+    return { cards }
+  },
 }
 </script>
 
