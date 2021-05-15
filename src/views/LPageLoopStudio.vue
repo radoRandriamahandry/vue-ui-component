@@ -1,17 +1,15 @@
 <template>
-  <div class="container--loopStudio">
-    <p>Loop Studio</p>
-    <div class="grid grid-cols-9 grid-rows-4 mt-5">
-      <div class="col-start-1 col-end-6 row-start-1 row-end-4">
+  <HeroSection></HeroSection>
+  <div class="max-w-screen-lg mx-auto container--loopStudio">
+    <OverlappingContent>
+      <template #firstContent>
         <img
           src="/src/assets/LPageLoopStudio/image-interactive.jpg"
           alt=""
           srcset=""
         />
-      </div>
-      <div
-        class="col-start-5 col-end-10 row-start-2 row-end-5 px-16 py-20  bg-gray-50"
-      >
+      </template>
+      <template #secondContent>
         <h2 class="text-4xl leading-9 tracking-wider uppercase">
           The leader in interactive VR
         </h2>
@@ -21,22 +19,21 @@
           award-winning creations have transformed businesses through digital
           experiences that bind to their brand.
         </p>
-      </div>
-    </div>
+      </template>
+    </OverlappingContent>
   </div>
 </template>
 
 <script>
-export default {}
+import OverlappingContent from "../components/loop-studios/layouts/OverlappingContent.vue"
+import HeroSection from "../components/loop-studios/layouts/HeroSection.vue"
+export default {
+  components: { OverlappingContent, HeroSection },
+}
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
-
-/* p {
-  font-family: "Josefin Sans", sans-serif;
-}  */
 
 .container--loopStudio {
   font-family: "Josefin Sans", sans-serif;

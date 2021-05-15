@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router"
 import Home from "../views/Home.vue"
-import LandingPages from "../views/LandingPages.vue"
+import LPageLoopStudio from "../views/LPageLoopStudio.vue"
 
 const routes = [
   {
@@ -9,9 +9,9 @@ const routes = [
     component: Home,
   },
   {
-    path: "/landingpages",
-    name: "LandingPages",
-    component: LandingPages,
+    path: "/loopstudio",
+    name: "LPageLoopStudio",
+    component: LPageLoopStudio,
   },
 ]
 
