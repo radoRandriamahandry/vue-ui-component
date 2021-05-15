@@ -1,6 +1,6 @@
 <template>
   <div class="grid h-full grid-rows-6">
-    <div class="self-end">
+    <div class="self-end pb-6">
       <NavBar />
     </div>
     <div class="w-full row-start-3 row-end-6 mx-auto text-white">
