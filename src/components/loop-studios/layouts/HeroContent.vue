@@ -1,11 +1,9 @@
 <template>
-  <div class="absolute top-0 grid w-screen h-full grid-rows-6">
+  <div class="grid h-full grid-rows-6">
     <div class="self-end">
       <NavBar />
     </div>
-    <div
-      class="w-full max-w-screen-xl row-start-3 row-end-6 mx-auto text-white  px-14"
-    >
+    <div class="w-full row-start-3 row-end-6 mx-auto text-white">
       <div class="w-7/12 py-8 border-2 border-white px-9">
         <h1 class="font-light uppercase text-7xl">
           Immersive Experiences That deliver

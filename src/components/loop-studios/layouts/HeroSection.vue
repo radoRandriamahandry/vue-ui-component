@@ -1,11 +1,15 @@
 <template>
-  <div class="relative mx-auto overflow-hidden bg-gray-400">
-    <img
-      src="/src/assets/LPageLoopStudio/image-hero.jpg"
-      alt="Hero image "
-      class="object-cover w-full"
-    />
-    <HeroContent />
+  <div>
+    <div class="absolute inset-0">
+      <img
+        src="/src/assets/LPageLoopStudio/image-hero.jpg"
+        alt="Hero image "
+        class="object-cover w-full"
+      />
+    </div>
+    <div class="relative h-screen mx-auto overflow-hidden">
+      <HeroContent />
+    </div>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <HeroSection></HeroSection>
-  <div class="max-w-screen-xl mx-auto px-14 container--loopStudio">
+  <div class="container--loopStudio">
     <OverlappingContent class="mt-28">
       <template #firstContent>
         <img

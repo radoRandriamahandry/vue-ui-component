@@ -1,6 +1,6 @@
 <template>
   <div class="grid text-white justify-items-center">
-    <div class="flex items-center justify-between w-full max-w-screen-xl px-14">
+    <div class="flex items-center justify-between w-full">
       <h2 class="text-3xl font-bold hero-logo">loopstudios</h2>
       <div class="flex gap-x-3">
         <div
