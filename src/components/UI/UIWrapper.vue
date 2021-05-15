@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="grid border rounded-md border-asana-green py-7 place-items-center"
-  >
+  <div class="grid border border-gray-300 rounded-md py-7 place-items-center">
     <slot></slot>
   </div>
 </template>
