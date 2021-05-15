@@ -1,17 +1,21 @@
 <template>
-  <div class="relative mx-auto overflow-hidden bg-gray-400">
-    <img
-      src="/src/assets/LPageLoopStudio/image-hero.jpg"
-      alt="Hero image "
-      class="object-cover w-full"
-    />
-    <TheHeader />
+  <div>
+    <div class="absolute inset-0">
+      <img
+        src="/src/assets/LPageLoopStudio/image-hero.jpg"
+        alt="Hero image "
+        class="object-cover w-full"
+      />
+    </div>
+    <div class="relative h-screen mx-auto overflow-hidden">
+      <HeroContent />
+    </div>
   </div>
 </template>
 
 <script>
-import TheHeader from "./TheHeader.vue"
+import HeroContent from "./HeroContent.vue"
 export default {
-  components: { TheHeader },
+  components: { HeroContent },
 }
 </script>
