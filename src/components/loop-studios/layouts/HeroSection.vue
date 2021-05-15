@@ -5,13 +5,13 @@
       alt="Hero image "
       class="object-cover w-full"
     />
-    <TheHeader />
+    <HeroContent />
   </div>
 </template>
 
 <script>
-import TheHeader from "./TheHeader.vue"
+import HeroContent from "./HeroContent.vue"
 export default {
-  components: { TheHeader },
+  components: { HeroContent },
 }
 </script>

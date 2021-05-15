@@ -1,7 +1,7 @@
 <template>
   <HeroSection></HeroSection>
-  <div class="max-w-screen-lg mx-auto container--loopStudio">
-    <OverlappingContent>
+  <div class="max-w-screen-xl mx-auto px-14 container--loopStudio">
+    <OverlappingContent class="mt-28">
       <template #firstContent>
         <img
           src="/src/assets/LPageLoopStudio/image-interactive.jpg"
@@ -10,15 +10,17 @@
         />
       </template>
       <template #secondContent>
-        <h2 class="text-4xl leading-9 tracking-wider uppercase">
-          The leader in interactive VR
-        </h2>
-        <p class="mt-3">
-          Founded in 2011, Loopstudios has been producing world-class virtual
-          reality projects for some of the best companies around the globe. Our
-          award-winning creations have transformed businesses through digital
-          experiences that bind to their brand.
-        </p>
+        <div class="w-full h-full py-20 pl-24 pr-28 bg-gray-50">
+          <h2 class="text-4xl leading-9 tracking-wider uppercase">
+            The leader in interactive VR
+          </h2>
+          <p class="mt-7">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
       </template>
     </OverlappingContent>
   </div>
