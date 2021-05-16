@@ -1,6 +1,6 @@
 <template>
   <HeroSection></HeroSection>
-  <div class="container--loopStudio">
+  <div class="max-w-screen-lg mx-auto container--loopStudio">
     <OverlappingContent class="mt-28">
       <template #firstContent>
         <img
@@ -39,16 +39,18 @@
       </div>
     </section>
   </div>
+  <Footer />
 </template>
 
 <script>
 import OverlappingContent from "../components/loop-studios/layouts/OverlappingContent.vue"
 import HeroSection from "../components/loop-studios/layouts/HeroSection.vue"
+import Footer from "../components/loop-studios/layouts/Footer.vue"
 import BaseCard from "../components/loop-studios/bases/BaseCard.vue"
 import { ref } from "vue"
 
 export default {
-  components: { OverlappingContent, HeroSection, BaseCard },
+  components: { OverlappingContent, HeroSection, BaseCard, Footer },
   setup() {
     const cards = ref([
       {
