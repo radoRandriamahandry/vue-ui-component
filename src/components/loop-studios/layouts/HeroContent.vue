@@ -11,9 +11,16 @@
       </div>
     </div>
   </div>
-  <div class="sm:hidden">
-    <div class="">
+  <div class="h-full sm:hidden">
+    <div class="grid grid-rows-5">
       <NavBar />
+      <div class="self-center w-5/6 row-start-3 row-end-5 mx-auto">
+        <h1
+          class="p-5 text-5xl font-light text-white uppercase border-2 border-white "
+        >
+          Immersive Experiences That deliver
+        </h1>
+      </div>
     </div>
   </div>
 </template>
