@@ -1,5 +1,5 @@
 <template>
-  <HeroSection></HeroSection>
+  <HeroSection />
   <div class="max-w-screen-lg mx-auto container--loopStudio">
     <div class="mt-20 px-7 sm:mt-28">
       <OverlappingContent>
