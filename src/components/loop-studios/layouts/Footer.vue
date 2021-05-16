@@ -31,8 +31,29 @@
               </div>
             </div>
           </section>
-          <section>
-            <div>Something else</div>
+          <section class="grid gap-3 justify-items-end">
+            <div class="flex space-x-4">
+              <div>
+                <font-awesome-icon
+                  class="fa-2x"
+                  :icon="['fab', 'facebook-square']"
+                />
+              </div>
+              <div>
+                <font-awesome-icon class="fa-2x" :icon="['fab', 'twitter']" />
+              </div>
+              <div>
+                <font-awesome-icon class="fa-2x" :icon="['fab', 'pinterest']" />
+              </div>
+              <div>
+                <font-awesome-icon class="fa-2x" :icon="['fab', 'instagram']" />
+              </div>
+            </div>
+            <div>
+              <p class="text-sm font-light text-gray-400">
+                copyright 2021 Loopstudios. All rights reserved.
+              </p>
+            </div>
           </section>
         </div>
       </div>
