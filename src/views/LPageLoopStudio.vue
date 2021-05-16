@@ -1,28 +1,32 @@
 <template>
   <HeroSection></HeroSection>
   <div class="max-w-screen-lg mx-auto container--loopStudio">
-    <OverlappingContent class="mt-28">
-      <template #firstContent>
-        <img
-          src="/src/assets/LPageLoopStudio/image-interactive.jpg"
-          alt=""
-          srcset=""
-        />
-      </template>
-      <template #secondContent>
-        <div class="w-full h-full py-20 pl-24 bg-gray-50">
-          <h2 class="text-4xl leading-9 tracking-wider uppercase">
-            The leader in interactive VR
-          </h2>
-          <p class="mt-7">
-            Founded in 2011, Loopstudios has been producing world-class virtual
-            reality projects for some of the best companies around the globe.
-            Our award-winning creations have transformed businesses through
-            digital experiences that bind to their brand.
-          </p>
-        </div>
-      </template>
-    </OverlappingContent>
+    <div class="mt-20 px-7 sm:mt-0">
+      <OverlappingContent class="sm:mt-28">
+        <template #firstContent>
+          <img
+            src="/src/assets/LPageLoopStudio/image-interactive.jpg"
+            alt=""
+            srcset=""
+          />
+        </template>
+        <template #secondContent>
+          <div
+            class="w-full h-full text-center  mt-14 sm:mt-0 sm:py-20 sm:pl-24 bg-gray-50"
+          >
+            <h2 class="text-4xl leading-9 tracking-wider uppercase">
+              The leader in interactive VR
+            </h2>
+            <p class="mt-7">
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </div>
+        </template>
+      </OverlappingContent>
+    </div>
     <section class="mt-12">
       <div class="flex justify-between">
         <h2 class="text-4xl leading-9 uppercase">Our Creations</h2>
