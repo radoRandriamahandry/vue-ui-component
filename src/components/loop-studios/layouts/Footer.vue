@@ -4,10 +4,14 @@
 
     <div class="relative max-w-screen-lg py-10 mx-auto">
       <div class="grid text-gray-200 justify-items-center">
-        <div class="flex items-center justify-between w-full">
+        <div
+          class="flex flex-col w-full  sm:items-center sm:flex-row sm:justify-between"
+        >
           <section class="grid gap-3">
-            <h2 class="text-3xl font-bold hero-logo">loopstudios</h2>
-            <div class="flex gap-x-2">
+            <h2 class="text-3xl font-bold text-center hero-logo sm:text-left">
+              loopstudios
+            </h2>
+            <div class="sm:flex gap-x-2">
               <div
                 v-for="link in links"
                 :key="link.name"
@@ -31,7 +35,9 @@
               </div>
             </div>
           </section>
-          <section class="grid gap-3 justify-items-end">
+          <section
+            class="grid gap-3 my-6  sm:my-0 sm:justify-items-end justify-items-center"
+          >
             <div class="flex space-x-4">
               <div>
                 <font-awesome-icon
