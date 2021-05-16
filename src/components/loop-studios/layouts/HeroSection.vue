@@ -4,7 +4,7 @@
       <img
         src="/src/assets/LPageLoopStudio/image-hero.jpg"
         alt="Hero image "
-        class="object-cover w-full"
+        class="object-cover h-full sm:h-auto sm:object-cover sm:w-full"
       />
     </div>
     <div class="relative h-screen max-w-screen-lg mx-auto overflow-hidden">

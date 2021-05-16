@@ -1,5 +1,5 @@
 <template>
-  <div class="grid h-full grid-rows-6">
+  <div class="hidden h-full grid-rows-6 sm:grid">
     <div class="self-end pb-6">
       <NavBar />
     </div>
@@ -9,6 +9,11 @@
           Immersive Experiences That deliver
         </h1>
       </div>
+    </div>
+  </div>
+  <div class="sm:hidden">
+    <div class="">
+      <NavBar />
     </div>
   </div>
 </template>

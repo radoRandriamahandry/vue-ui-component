@@ -1,8 +1,13 @@
 <template>
   <div class="grid text-white justify-items-center">
-    <div class="flex items-center justify-between w-full">
+    <div
+      class="flex items-center justify-between w-full px-6 py-12  sm:px-0 sm:py-0"
+    >
       <h2 class="text-3xl font-bold hero-logo">loopstudios</h2>
-      <div class="flex gap-x-3">
+      <div class="sm:hidden">
+        <fontAwesomeIcon class="fa-2x" :icon="['fas', 'bars']" />
+      </div>
+      <div class="hidden sm:flex gap-x-3">
         <div
           v-for="link in links"
           :key="link.name"
