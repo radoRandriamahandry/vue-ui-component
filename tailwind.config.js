@@ -29,6 +29,7 @@ module.exports = {
     extend: {
       opacity: ["disabled"],
       cursor: ["disabled"],
+      scale: ["group-hover"],
     },
   },
   plugins: [],
