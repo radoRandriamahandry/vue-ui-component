@@ -7,7 +7,7 @@
         class="object-cover w-full"
       />
     </div>
-    <div class="relative h-screen mx-auto overflow-hidden">
+    <div class="relative h-screen max-w-screen-lg mx-auto overflow-hidden">
       <HeroContent />
     </div>
   </div>
