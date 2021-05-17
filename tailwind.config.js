@@ -18,10 +18,22 @@ module.exports = {
           yellow: "#ffb900",
           red: "#fc636b",
         },
+        blogr: {
+          "lighter-red": "hsl(13, 100%, 72%)",
+          "light-red": "hsl(353, 100%, 62%)",
+        },
       },
 
       flex: {
         5: 5,
+      },
+
+      gridTemplateRows: {
+        "auto-1fr": "auto 1fr",
+      },
+
+      borderRadius: {
+        blogr: "150px",
       },
     },
   },
