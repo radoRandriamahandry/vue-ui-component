@@ -2,7 +2,7 @@
   <div class="relative h-screen overflow-hidden rounded-bl-blogr">
     <HeroBackground />
     <div
-      class="relative h-full max-w-screen-lg mx-auto overflow-hidden text-white"
+      class="absolute inset-0 max-w-screen-lg mx-auto overflow-hidden text-white "
     >
       <HeroContent />
     </div>
