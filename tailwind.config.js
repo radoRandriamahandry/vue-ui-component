@@ -21,6 +21,12 @@ module.exports = {
         blogr: {
           "lighter-red": "hsl(13, 100%, 72%)",
           "light-red": "hsl(353, 100%, 62%)",
+          "primary-red": "hsl(356, 100%, 66%)",
+          "primary-light-red": "hsl(355, 100%, 74%)",
+          "primary-blue": "hsl(208,49%,24%)",
+          "neutral-gray-blue": "hsl(240, 2%, 79%)",
+          "neutral-dark-gray-blue": "hsl(207, 13%, 34%)",
+          "neutral-dark-black-blue": "hsl(240, 10%, 16%)",
         },
       },
 
