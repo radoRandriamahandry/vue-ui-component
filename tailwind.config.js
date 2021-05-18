@@ -39,7 +39,7 @@ module.exports = {
       },
 
       borderRadius: {
-        blogr: "150px",
+        blogr: "100px",
       },
     },
   },

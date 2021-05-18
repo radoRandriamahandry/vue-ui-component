@@ -11,7 +11,7 @@
       <template #left>
         <div class="grid grid-cols-4">
           <div class="col-start-2 col-end-5">
-            <Paragraphe>
+            <Paragraphe background="light">
               <template #title> Introducing an extensible editor </template>
               <template #content>
                 Blogr features an exceedingly intuitive interface which lets you
@@ -23,7 +23,7 @@
               </template>
             </Paragraphe>
             <div class="mt-14">
-              <Paragraphe>
+              <Paragraphe background="light">
                 <template #title> Introducing an extensible editor </template>
                 <template #content>
                   Flexible content management enables users to easily move
@@ -43,16 +43,13 @@
             src="/src/assets/LPageBlogr/illustration-editor-desktop.svg"
             alt=""
           />
-          <!-- <img
-            class="absolute -top-1/2"
-            src="/src/assets/LPageBlogr/illustration-editor-desktop.svg"
-            alt=""
-          /> -->
         </div>
       </template>
     </SectionWithTwoColumn>
     <!-- Second section -->
-    <SectionWithTwoColumn class="bg-gray-800 py-28">
+    <SectionWithTwoColumn
+      class="bg-gray-800 rounded-tr-blogr rounded-bl-blogr py-28"
+    >
       <template #left>
         <!-- <div class="relative flex items-center w-full h-full">
           <img
@@ -70,15 +67,17 @@
         </div>
       </template>
       <template #right>
-        <Paragraphe>
-          <template #title> State of the Art Infrastructure </template>
-          <template #content>
-            With reliability and speed in mind, worldwide data centers provide
-            the backbone for ultra-fast connectivity. This ensures your site
-            will load instantly, no matter where your readers are, keeping your
-            site competitive.
-          </template>
-        </Paragraphe>
+        <div class="pr-20">
+          <Paragraphe background="dark">
+            <template #title> State of the Art Infrastructure </template>
+            <template #content>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </template>
+          </Paragraphe>
+        </div>
       </template>
     </SectionWithTwoColumn>
     <!-- Third section -->
@@ -93,25 +92,29 @@
         </div>
       </template>
       <template #right>
-        <Paragraphe>
-          <template #title>Free, open, simple</template>
-          <template #content
-            >Blogr is a free and open source application backed by a large
-            community of helpful developers. It supports features such as code
-            syntax highlighting, RSS feeds, social media integration,
-            third-party commenting tools, and works seamlessly with Google
-            Analytics. The architecture is clean and is relatively easy to
-            learn.</template
-          >
-        </Paragraphe>
-        <Paragraphe>
-          <template #title>Powerful tooling</template>
-          <template #content
-            >Batteries included. We built a simple and straightforward CLI tool
-            that makes customization and deployment a breeze, but capable of
-            producing even the most complicated sites. learn.</template
-          >
-        </Paragraphe>
+        <div class="pr-20">
+          <Paragraphe background="light">
+            <template #title>Free, open, simple</template>
+            <template #content>
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </template>
+          </Paragraphe>
+        </div>
+        <div class="pr-20 mt-10">
+          <Paragraphe background="light">
+            <template #title>Powerful tooling</template>
+            <template #content>
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites. learn.
+            </template>
+          </Paragraphe>
+        </div>
       </template>
     </SectionWithTwoColumn>
   </div>
