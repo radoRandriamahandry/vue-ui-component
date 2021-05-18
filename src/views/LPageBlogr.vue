@@ -117,6 +117,11 @@
         </div>
       </template>
     </SectionWithTwoColumn>
+    <div
+      class="w-full  bg-blogr-neutral-dark-black-blue text-blogr-neutral-gray-blue rounded-tr-blogr"
+    >
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -124,11 +129,14 @@
 import HeroSection from "../components/blogr/layouts/HeroSection.vue"
 import SectionWithTwoColumn from "../components/blogr/layouts/SectionWithTwoColumn.vue"
 import Paragraphe from "../components/blogr/layouts/Paragraphe.vue"
+import Footer from "../components/blogr/layouts/Footer.vue"
+
 export default {
   components: {
     HeroSection,
     SectionWithTwoColumn,
     Paragraphe,
+    Footer,
   },
 }
 </script>
