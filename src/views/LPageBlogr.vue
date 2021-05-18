@@ -48,7 +48,7 @@
     </SectionWithTwoColumn>
     <!-- Second section -->
     <SectionWithTwoColumn
-      class="bg-gray-800 rounded-tr-blogr rounded-bl-blogr py-28"
+      class="py-20 bg-gray-800 rounded-tr-blogr rounded-bl-blogr"
     >
       <template #left>
         <!-- <div class="relative flex items-center w-full h-full">
